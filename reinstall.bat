@@ -52,7 +52,8 @@ rem 检查是否国内
 findstr /c:"loc=CN" geoip >nul
 if not errorlevel 1 (
     rem mirrors.tuna.tsinghua.edu.cn 会强制跳转 https
-    set mirror=https://mirrors.tuna.tsinghua.edu.cn 
+    rem set mirror=https://mirrors.tuna.tsinghua.edu.cn 
+    set mirror=http://mirrors.ustc.edu.cn/
     rem http://mirror.nju.edu.cn
     if defined confhome_cn (
         set confhome=!confhome_cn!
