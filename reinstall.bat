@@ -127,10 +127,10 @@ call :check_cygwin_installed || (
     rem 为了保证国内下载速度, cygwin EOL 统一使用 cygwin-archive x86 源
     if !CygwinEOL! == 1 (
         set CygwinArch=x86
-        set dir=/sourceware/cygwin-archive/20221123
+        set dir=/cygwin-archive/20221123
     ) else (
         set CygwinArch=x86_64
-        set dir=/sourceware/cygwin
+        set dir=/cygwin
     )
 
     rem 下载 Cygwin
