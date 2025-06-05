@@ -53,7 +53,7 @@ findstr /c:"loc=CN" geoip >nul
 if not errorlevel 1 (
     rem mirrors.tuna.tsinghua.edu.cn 会强制跳转 https
     rem set mirror=https://mirrors.tuna.tsinghua.edu.cn 
-    set mirror=http://mirrors.ustc.edu.cn/
+    set mirror=http://mirrors.ustc.edu.cn
     rem http://mirror.nju.edu.cn
     if defined confhome_cn (
         set confhome=!confhome_cn!
